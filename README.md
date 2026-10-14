@@ -6,6 +6,12 @@ Cherry Studio、Cursor、Open WebUI 等任何支持这两种协议的客户端�
 
 **零运行时依赖**：只需要 Node.js ≥ 18。没有 `npm install`，没有 Docker，没有 Redis。
 
+<p>
+  <a href="README.en.md">English</a> ·
+  <a href="docs/upstream-protocol.md">上游协议取证</a> ·
+  <a href="LICENSE">MIT</a>
+</p>
+
 ```bash
 git clone https://github.com/alanzeng423/workbuddy-api.git
 cd workbuddy-api
