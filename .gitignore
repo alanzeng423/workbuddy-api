@@ -1,0 +1,29 @@
+# Credentials — never commit these. A credential file is equivalent to the
+# account itself, and this project writes them into the config directory.
+auth.*.json
+auth.json
+*.pool.json
+config.json
+
+# Local state the service writes
+models.cache.json
+*.tmp
+
+# Logs
+*.log
+logs/
+
+# Dependencies — this project has none, but a stray install must not be committed
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~

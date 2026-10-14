@@ -1,0 +1,11 @@
+# Normalize line endings so a Windows checkout does not rewrite every file.
+#
+# Without this, `core.autocrlf=true` on Windows converts LF to CRLF on checkout,
+# making a cross-platform diff of an unchanged file look like a full rewrite.
+* text=auto eol=lf
+
+# Binary files must never be line-ending-converted.
+*.png binary
+*.jpg binary
+*.ico binary
+*.gif binary

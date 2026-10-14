@@ -1,0 +1,59 @@
+{
+  "name": "workbuddy-api",
+  "version": "0.1.0",
+  "description": "把 WorkBuddy / CodeBuddy 的订阅额度转成本机可直接使用的 OpenAI / Anthropic 兼容 API。零运行时依赖。",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "workbuddy-api": "server.mjs"
+  },
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs",
+    "login": "node login.mjs",
+    "status": "node status.mjs",
+    "ask": "node ask.mjs",
+    "smoke": "node smoke.mjs",
+    "test": "node run-tests.mjs",
+    "test:native": "node --test test/",
+    "preflight": "node tools/preflight.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "login.mjs",
+    "status.mjs",
+    "ask.mjs",
+    "smoke.mjs",
+    "run-tests.mjs",
+    "src",
+    "tools",
+    "docs",
+    "test",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "workbuddy",
+    "codebuddy",
+    "openai-compatible",
+    "anthropic",
+    "responses-api",
+    "reverse-proxy",
+    "llm-gateway",
+    "codex-cli",
+    "claude-code"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanzeng423/workbuddy-api.git"
+  },
+  "homepage": "https://github.com/alanzeng423/workbuddy-api#readme",
+  "bugs": {
+    "url": "https://github.com/alanzeng423/workbuddy-api/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
